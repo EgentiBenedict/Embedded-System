@@ -1,0 +1,7 @@
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Src/systick_config.o"
+"./Src/uart1_driver.o"
+"./Src/uart2_driver.o"
+"./Startup/startup_stm32f411retx.o"

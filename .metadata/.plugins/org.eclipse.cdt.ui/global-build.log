@@ -1,0 +1,21 @@
+18:38:11 **** Incremental Build of configuration Debug for project Week7_i2C_adxl345 ****
+make -j3 all 
+arm-none-eabi-size  Week7_i2C_adxl345.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3640	      0	   1592	   5232	   1470	Week7_i2C_adxl345.elf
+Finished building: default.size.stdout
+ 
+18:38:17 **** Incremental Build of configuration Debug for project Week7_i2C_adxl345 ****
+make -j3 all 
+arm-none-eabi-size  Week7_i2C_adxl345.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3640	      0	   1592	   5232	   1470	Week7_i2C_adxl345.elf
+Finished building: default.size.stdout
+ 
+18:39:48 **** Incremental Build of configuration Debug for project Week7_i2C_adxl345 ****
+make -j3 all 
+arm-none-eabi-size  Week7_i2C_adxl345.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3640	      0	   1592	   5232	   1470	Week7_i2C_adxl345.elf
+Finished building: default.size.stdout
+ 

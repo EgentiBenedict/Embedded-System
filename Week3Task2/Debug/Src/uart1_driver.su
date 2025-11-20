@@ -1,0 +1,9 @@
+../Src/uart1_driver.c:14:15:UART1_Init	16	static
+../Src/uart1_driver.c:64:15:UART1_DeInit	4	static
+../Src/uart1_driver.c:73:15:UART1_SetBaudRate	24	static
+../Src/uart1_driver.c:85:15:UART1_Transmit	32	static
+../Src/uart1_driver.c:107:15:UART1_Receive	32	static
+../Src/uart1_driver.c:122:15:UART1_TransmitByte	24	static
+../Src/uart1_driver.c:135:9:UART1_ReceiveByte	4	static
+../Src/uart1_driver.c:141:6:UART1_IsDataAvailable	4	static
+../Src/uart1_driver.c:145:6:UART1_IsTransmitComplete	4	static

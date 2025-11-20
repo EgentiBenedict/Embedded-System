@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;week6/Inc/myClockConf.c&apos; to &apos;myClockConf.h&apos;" description="Rename resource &apos;myClockConf.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/myClockConf.c" name="myClockConf.h" stamp="1761592550103" updateReferences="true"/>
+</session>

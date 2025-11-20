@@ -1,0 +1,9 @@
+../Src/uart2_driver.c:15:15:UART2_Init	16	static
+../Src/uart2_driver.c:55:15:UART2_DeInit	4	static
+../Src/uart2_driver.c:63:15:UART2_SetBaudRate	24	static
+../Src/uart2_driver.c:75:15:UART2_Transmit	32	static
+../Src/uart2_driver.c:97:15:UART2_Receive	32	static
+../Src/uart2_driver.c:112:15:UART2_TransmitByte	24	static
+../Src/uart2_driver.c:125:9:UART2_ReceiveByte	4	static
+../Src/uart2_driver.c:131:6:UART2_IsDataAvailable	4	static
+../Src/uart2_driver.c:135:6:UART2_IsTransmitComplete	4	static

@@ -1,0 +1,2 @@
+../Src/adc_config.c:11:6:adc_PA_init	32	static
+../Src/adc_config.c:57:10:adc_PA_read	4	static

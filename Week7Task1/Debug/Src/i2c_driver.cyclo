@@ -1,0 +1,4 @@
+../Src/i2c_driver.c:29:6:I2C1_init	1
+../Src/i2c_driver.c:63:6:I2C1_readByte	8
+../Src/i2c_driver.c:107:6:I2C1_burstRead	12
+../Src/i2c_driver.c:165:6:I2C1_burstWrite	8

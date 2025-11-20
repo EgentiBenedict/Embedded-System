@@ -1,0 +1,74 @@
+17:43:59 **** Incremental Build of configuration Debug for project week5_A1 ****
+make -j3 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"../../CMSIS/Include" -I"../../CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/systic_config.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"../../CMSIS/Include" -I"../../CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/systic_config.d" -MT"Src/systic_config.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/systic_config.o"
+../Src/systic_config.c: In function 'delayMS':
+../Src/systic_config.c:6:9: error: 'SysTick' undeclared (first use in this function)
+    6 |         SysTick->LOAD = SYTICK_LOAD_VALUE;
+      |         ^~~~~~~
+../Src/systic_config.c:6:9: note: each undeclared identifier is reported only once for each function it appears in
+../Src/systic_config.c:6:25: error: 'SYTICK_LOAD_VALUE' undeclared (first use in this function); did you mean 'SYSTICK_LOAD_VALUE_16000'?
+    6 |         SysTick->LOAD = SYTICK_LOAD_VALUE;
+      |                         ^~~~~~~~~~~~~~~~~
+      |                         SYSTICK_LOAD_VALUE_16000
+../Src/systic_config.c:8:25: error: expected ';' before 'SysTick'
+    8 |         SysTick->VAL = 0
+      |                         ^
+      |                         ;
+    9 | 
+   10 |         SysTick->CTRL |= (1 << SysTick_CTRL_CLKSOURCE_Pos);
+      |         ~~~~~~~          
+../Src/systic_config.c:12:32: error: 'SysTick_CTRL_ENABLE_Pos' undeclared (first use in this function)
+   12 |         SysTick->CTRL |= (1 << SysTick_CTRL_ENABLE_Pos);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/systic_config.c:14:26: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   14 |         for(int i = 0, i < timeMS; i++){
+      |                          ^
+../Src/systic_config.c:14:39: error: expected ';' before ')' token
+   14 |         for(int i = 0, i < timeMS; i++){
+      |                                       ^
+      |                                       ;
+../Src/systic_config.c:15:45: error: 'SysTick_CTRL_COUNTFLAG_Pos' undeclared (first use in this function)
+   15 |                 while(!(SysTick->CTRL & (1<<SysTick_CTRL_COUNTFLAG_Pos)));
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:28: Src/systic_config.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/main.c: In function 'inputCapture_TIM3CH4':
+../Src/main.c:18:25: error: 'RCC_APB1ENR_GPIO_TIM3EN' undeclared (first use in this function); did you mean 'RCC_APB1ENR_TIM3EN'?
+   18 |         RCC->APB1ENR |= RCC_APB1ENR_GPIO_TIM3EN;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+      |                         RCC_APB1ENR_TIM3EN
+../Src/main.c:18:25: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:21:25: error: 'GPIOC_MODER_MODER9_1' undeclared (first use in this function); did you mean 'GPIO_MODER_MODER9_1'?
+   21 |         GPIOC->MODER |= GPIOC_MODER_MODER9_1;
+      |                         ^~~~~~~~~~~~~~~~~~~~
+      |                         GPIO_MODER_MODER9_1
+../Src/main.c:27:23: error: 'FFFF' undeclared (first use in this function)
+   27 |         TIM3->ARR = 0*FFFF; //4.1ms
+      |                       ^~~~
+../Src/main.c:35:23: error: 'TIM_DIER_UTE' undeclared (first use in this function); did you mean 'TIM_DIER_UDE'?
+   35 |         TIM3->DIER |= TIM_DIER_UTE | TIM_DIER_CC4IE;
+      |                       ^~~~~~~~~~~~
+      |                       TIM_DIER_UDE
+../Src/main.c:41:13: error: 'NVIC_Type' has no member named 'EnableIRQ'
+   41 |         NVIC->EnableIRQ(TIM3_IRQN);
+      |             ^~
+../Src/main.c:41:25: error: 'TIM3_IRQN' undeclared (first use in this function); did you mean 'TIM3_IRQn'?
+   41 |         NVIC->EnableIRQ(TIM3_IRQN);
+      |                         ^~~~~~~~~
+      |                         TIM3_IRQn
+../Src/main.c: At top level:
+../Src/main.c:57:1: error: expected identifier or '(' before '}' token
+   57 | }
+      | ^
+../Src/main.c:61:9: error: expected identifier or '(' before '}' token
+   61 |         }
+      |         ^
+../Src/main.c:62:1: error: expected identifier or '(' before '}' token
+   62 | }
+      | ^
+make: *** [Src/subdir.mk:28: Src/main.o] Error 1
+"make -j3 all" terminated with exit code 2. Build might be incomplete.
+
+17:44:00 Build Failed. 19 errors, 0 warnings. (took 381ms)
+

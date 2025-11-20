@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week3-A2 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Week4_Lab2,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week6 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Setup2 Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Setup2\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Setup2\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Week4_Lab2/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Week7_i2C_adxl345\ Debug/activeLaunchMode=debug

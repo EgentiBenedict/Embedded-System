@@ -1,0 +1,4 @@
+../Src/TimerConf.c:3:6:Timer2_PWM_Init	1
+../Src/TimerConf.c:42:6:Timer2_PWM_CA_Init	1
+../Src/TimerConf.c:87:6:Timer2_SetDutyCycle	2
+../Src/TimerConf.c:92:6:Timer2_SetDutyCycle_CentreAligned	2
